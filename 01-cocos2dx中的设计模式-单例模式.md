@@ -3,7 +3,7 @@
 
 **单例模式的定义：保证一个类仅有一个实例，并提供一个访问它的全局的访问点**<br>
 
-1. Cocos2D-x中的单例包括：
+**1. Cocos2D-x中的单例包括：**
 CCDirector,CCTextureCache,CCSpriteFrameCache,CCAnimationCache,CCUserDefault, <br>
 CCNotificationCenter，CCShaderCache，CCScriptEngineManager，CCPoolManager，CCFileUtils, <br>
 CCProfiler，SimleAudioEngie，CCConfiguration，CCApplication，CCDirectorCaller（ios平台），CCEGLView. <br>
