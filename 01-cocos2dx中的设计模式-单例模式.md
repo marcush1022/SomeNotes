@@ -3,19 +3,22 @@
 
 **单例模式的定义：保证一个类仅有一个实例，并提供一个访问它的全局的访问点**<br>
 
-**1. Cocos2D-x中的单例包括：**
+1. Cocos2D-x中的单例包括：
+----
+
 CCDirector,CCTextureCache,CCSpriteFrameCache,CCAnimationCache,CCUserDefault, <br>
 CCNotificationCenter，CCShaderCache，CCScriptEngineManager，CCPoolManager，CCFileUtils, <br>
 CCProfiler，SimleAudioEngie，CCConfiguration，CCApplication，CCDirectorCaller（ios平台），CCEGLView. <br>
-<br>
+
 2. 存在单例原因
-<br>
+----
+
 * CCDirector单例：<br>
 它负责管理初始化OpenGL渲染窗口以及游戏场景的流程控制，是cocos2dx游戏开发中必不可少的类之一，<br>
 为什么要把此类设计成单例对象呢？因为，一个游戏只需要有一个游戏窗口就够了，所以，只需要初始化一次OpenGL渲染窗口，<br>
 而且场景的流程控制功能，也只需要存在一个这样的场景控制对象即可。为了保证CCDirector类只存在一个实例对象，就必须<br>
 使用单例模式.<br>
-<br>
+
 * CCUserDefault单例：<br>
 此类主要是用来保存游戏中的数据，会创建一个xml文件，并把用户自定义的数据以key-value的形式存储到此xml文件中，<br>
 此类是单例类的原因很简单，因为类似这种操作数据文件，或者配置文件的类，通常只需要在程序运行过程中存在一个实 <br>
