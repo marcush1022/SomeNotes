@@ -3,14 +3,14 @@
 
 **单例模式的定义：保证一个类仅有一个实例，并提供一个访问它的全局的访问点**<br>
 
-1. Cocos2D-x中的单例包括：
+1. **Cocos2D-x中的单例包括：**
 ----
 
 CCDirector,CCTextureCache,CCSpriteFrameCache,CCAnimationCache,CCUserDefault, <br>
 CCNotificationCenter，CCShaderCache，CCScriptEngineManager，CCPoolManager，CCFileUtils, <br>
 CCProfiler，SimleAudioEngie，CCConfiguration，CCApplication，CCDirectorCaller（ios平台），CCEGLView. <br>
 
-2. 存在单例原因
+2. **存在单例原因**
 ----
 
 * CCDirector单例：<br>
@@ -53,7 +53,7 @@ autoReleasePool清空，而清空的时候则会调用autoReleasePool里面所�
 * CCProfiler: <br>
 该类负责cocos2d的性能其运行情况分析，也是一个工具类。所以它设计成单例类的理由与CCFileUtils类差不多.<br>
 
-3. 使用单例模式的优缺点
+3. **使用单例模式的优缺点**
 ----
 
 * 优点： <br>
@@ -65,7 +65,7 @@ autoReleasePool清空，而清空的时候则会调用autoReleasePool里面所�
 最好不要使用全局变量), 而且单例模式会使得对象的内存在程序结束之前一直存在，在一些使用GC的语言里面，这其实就是一种
 内存泄漏，因为它们永远都不到释放<br>
 
-4. 游戏开发中如何运用单例模式
+4. **游戏开发中如何运用单例模式**
 ----
 
 * 游戏数据保存和加载。这些数据包括关卡数据、游戏进行中的状态数据等。这样一些信息很多游戏模块中都需要访问，所以可以为 
