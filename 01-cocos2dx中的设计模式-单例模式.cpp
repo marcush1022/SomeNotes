@@ -1,0 +1,12 @@
+
+Cocos2D-x中的单例包括：
+CCDirector,CCTextureCache,CCSpriteFrameCache,CCAnimationCache,CCUserDefault,
+CCNotificationCenter，CCShaderCache，CCScriptEngineManager，CCPoolManager，CCFileUtils,
+CCProfiler，SimleAudioEngie，CCConfiguration，CCApplication，CCDirectorCaller（ios平台），CCEGLView.
+
+存在这样单例原因是？ 
+
+例如CCDirector，它负责管理初始化OpenGL渲染窗口以及游戏场景的流程控制，是cocos2dx游戏开发中必不可少的类之一，
+为什么要把此类设计成单例对象呢？因为，一个游戏只需要有一个游戏窗口就够了，所以，只需要初始化一次OpenGL渲染窗口，
+而且场景的流程控制功能，也只需要存在一个这样的场景控制对象即可。为了保证CCDirector类只存在一个实例对象，就必须
+使用单例模式
