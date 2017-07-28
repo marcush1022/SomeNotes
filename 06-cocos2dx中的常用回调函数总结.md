@@ -5,19 +5,19 @@
 ----
 
 scheduleUpdate: <br>
-通过this->scheduleUpdate() 把定时器加到节点后，节点会每帧都会调用虚函数：update(void)； 
+通过this->scheduleUpdate() 把定时器加到节点后，节点会每帧都会调用虚函数：update(void)<br>
 取消方法：this->unscheduleUpdate(); 只能触发虚函数 update()
 
 schedule: <br>
-定义是 void CCNode::schedule(SEL_SCHEDULE selector, float interval, unsigned int repeat, float delay)； 
+定义是 void CCNode::schedule(SEL_SCHEDULE selector, float interval, unsigned int repeat, float delay)<br> 
 通过this->schedule(SEL_SCHEDULE selector, float interval, unsigned int repeat, float delay) 把定时器加到节点，可以指定回调函数、触发间隔、
-重复次数、延迟启动时间，第二个参数（触发间隔）为0则表示每帧都触发，相当于scheduleUpdate，但优势在于可以自己指定回调方法；
+重复次数、延迟启动时间，第二个参数（触发间隔）为0则表示每帧都触发，相当于scheduleUpdate，但优势在于可以自己指定回调方法；<br>
 取消方法：this->unschedule(SEL_SCHEDULE selector);
 
 scheduleOnce: <br> 
-定义是 void CCNode::scheduleOnce(SEL_SCHEDULE selector, float delay)； 
-this->scheduleOnce(selector, delay) 把定时器加到节点，指定回调函数和延迟启动时间，只会触发一次。 
-取消方法：this->unscheduleOnce(selector)；
+定义是 void CCNode::scheduleOnce(SEL_SCHEDULE selector, float delay);<br>
+this->scheduleOnce(selector, delay) 把定时器加到节点，指定回调函数和延迟启动时间，只会触发一次。<br> 
+取消方法：this->unscheduleOnce(selector); <br>
 
 
 * **2. callFunc 家族**
@@ -26,9 +26,9 @@ this->scheduleOnce(selector, delay) 把定时器加到节点，指定回调函�
 当需要在一个动作序列中某一个动作执行结束之后，调用某个函数用于执行一个任务的时候，可以使用CCCallFunC家族函数
 CCCallFunC家族函数可以将函数调用的过程封装成一个动作类，从而放入动作序列中以供我们调用。 
 
-CallFunc可以直接使用CC_CALLBACK_0、CC_CALLBACK_1，也可以直接使用std::bind。
-CallFunc: 使用CC_CALLBACK_0。不带任何不定参数。
-CallFuncN：使用CC_CALLBACK_1。
+CallFunc可以直接使用CC_CALLBACK_0、CC_CALLBACK_1，也可以直接使用std::bind。<br>
+CallFunc: 使用CC_CALLBACK_0。不带任何不定参数。<br>
+CallFuncN：使用CC_CALLBACK_1。<br>
 
 例子：
 
