@@ -1,7 +1,7 @@
 06-cocos2dx中的常用回调函数总结
 ====
 
-* **1. schedule家族**
+**1. schedule家族**
 ----
 
 scheduleUpdate: <br>
@@ -20,7 +20,7 @@ this->scheduleOnce(selector, delay) 把定时器加到节点，指定回调函�
 取消方法：this->unscheduleOnce(selector); <br>
 
 
-* **2. callFunc 家族**
+**2. callFunc 家族**
 ----
 
 当需要在一个动作序列中某一个动作执行结束之后，调用某个函数用于执行一个任务的时候，可以使用CCCallFunC家族函数
