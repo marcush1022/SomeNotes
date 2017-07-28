@@ -4,7 +4,6 @@
 致谢：http://blog.csdn.net/ls1122/article/details/38339851
 
 **1. nullptr：用来代替NULL，nullptr是强类型，防止出现一些二义性**
-----
 
 ```
 void f(int); //#1  
@@ -17,7 +16,6 @@ f(nullptr) //无二义性，调用f(char*)
 ```
  
 **2. auto：根据上下文自动类型推导**
-----
 
 ``` 
 bool AppDelegate::applicationDidFinishLaunching() {  
@@ -45,7 +43,6 @@ struct D : B {
 ```
 
 **4. final:可用来修饰基类的虚函数，表示该函数不可被派生类重写即override**
-----
 
 ```
 struct B {  
@@ -60,7 +57,6 @@ struct D : B {
 ```
 
 **5. lambad表达式：主要应用时标书某些具有简单行为的函数**
-----
 
 例子：
 ```
