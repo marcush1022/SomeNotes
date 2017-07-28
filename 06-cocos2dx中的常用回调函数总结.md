@@ -4,7 +4,9 @@
 * **1. schedule家族**
 ----
 
-scheduleUpdate：通过this->scheduleUpdate() 把定时器加到节点后，节点会每帧都会调用虚函数：update(void)； 
+scheduleUpdate：
+
+通过this->scheduleUpdate() 把定时器加到节点后，节点会每帧都会调用虚函数：update(void)； 
 取消方法：this->unscheduleUpdate(); 只能触发虚函数 update()
 
 schedule：定义是 void CCNode::schedule(SEL_SCHEDULE selector, float interval, unsigned int repeat, float delay)； 
