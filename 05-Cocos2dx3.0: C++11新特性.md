@@ -1,6 +1,8 @@
 05-Cocos2dx3.0: C++11新特性
 ====
 
+致谢：http://blog.csdn.net/ls1122/article/details/38339851
+
 * **1. nullptr：用来代替NULL，nullptr是强类型，防止出现一些二义性**
 ----
 
