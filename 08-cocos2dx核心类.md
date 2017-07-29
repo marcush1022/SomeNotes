@@ -7,7 +7,7 @@
 * Layer
 * Sprite
 
-**1. 导演类Director: **
+**1. 导演类Director**
 
 导演类负责不同场景的切换，控制游戏流程(开始、继续、暂停等)，获取系统信息(如屏幕大小等)<br>
 导演类与Scene, Layer, Sprite不同，其直接继承于Ref类而不是Node类<br>
@@ -70,7 +70,7 @@ class CC_DLL Director : public Ref
     inline unsigned int getTotalFrames();
 ```
   
-**2. 场景Scene: **
+**2. 场景Scene**
   
 Scene继承于Node类，但是它只有create函数，因为场景就是一个容器，将不同的Layer组合在一起，便于管理<br>
 一个游戏会有很多场景，例如主界面，游戏界面载入界面等等。每个场景都是由多个图层组合在一起从而形成完整<br>
@@ -86,7 +86,7 @@ class CC_DLL Scene : public Node
 };
 ```
 
-**3. 布景层Layer: **
+**3. 布景层Layer**
 
 Layer继承于Node，继承了Node的所有操作，还附加了触控、重力加速度计、支持键盘输入事件的事件代理<br>
 一个Layer同样包含了多个元素，如标签（Label）、菜单（Menu）、精灵（Sprite）等<br>
@@ -124,7 +124,7 @@ class CC_DLL Layer : public Node
 };
 ```
 
-**4. 精灵类Sprite: **
+**4. 精灵类Sprite**
 
 精灵实际上就是一个2D图片，通过赋予精灵各种状态如大小、颜色、旋转、缩放等等实现各种效果<br>
 精灵是在布景层Layer上的，一个Layer包含多个精灵<br>
