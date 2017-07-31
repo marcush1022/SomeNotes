@@ -138,13 +138,20 @@ Sprite的默认锚点为(0.5,0.5)，即中心点.<br>
 class CC_DLL Sprite : public Node, public TextureProtocol
 {
     /***********************创建方法************************/
-    static Sprite* create();                                                                    //默认创建空精灵对象
-    static Sprite* create(const std::string& filename);                                         //通过图片文件(png)创建
-    static Sprite* create(const std::string& filename, const Rect& rect);                       //截取图片文件中某区域图片创建
-    static Sprite* createWithTexture(Texture2D *texture);                                       //纹理图片
-    static Sprite* createWithTexture(Texture2D *texture, const Rect& rect, bool rotated=false); //截取纹理图片中某一区域图片,是否旋转
-    static Sprite* createWithSpriteFrame(SpriteFrame *spriteFrame);                             //精灵帧,精灵帧一般从plist中读取
-    static Sprite* createWithSpriteFrameName(const std::string& spriteFrameName);               //通过精灵帧的名字创建
+    //默认创建空精灵对象
+    static Sprite* create();    
+    //通过图片文件(png)创建
+    static Sprite* create(const std::string& filename);  
+    //截取图片文件中某区域图片创建
+    static Sprite* create(const std::string& filename, const Rect& rect); 
+    //纹理图片
+    static Sprite* createWithTexture(Texture2D *texture);           
+    //截取纹理图片中某一区域图片,是否旋转
+    static Sprite* createWithTexture(Texture2D *texture, const Rect& rect, bool rotated=false); 
+    //精灵帧,精灵帧一般从plist中读取
+    static Sprite* createWithSpriteFrame(SpriteFrame *spriteFrame);            
+    //通过精灵帧的名字创建
+    static Sprite* createWithSpriteFrameName(const std::string& spriteFrameName);               
  
  
  
