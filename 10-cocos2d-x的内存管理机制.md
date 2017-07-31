@@ -52,6 +52,20 @@ release()后，引用计数回到1；再执行一次release()后，对象会被�
 例：autorelease的使用:
 
 ```
+TestObject *obj = new TestObject("testobj");
+    CCLOG("obj referenceCount=%d",obj->getReferenceCount());
+    obj->autorelease();
+    CCLOG("obj is add in currentpool %s",PoolManager::getInstance()->getCurrentPool()->contains(obj)?"true":"false");
+    CCLOG("obj referenceCount=%d",obj->getReferenceCount());
+    obj->retain();
+    CCLOG("obj referenceCount=%d",obj->getReferenceCount());
+    obj->release();
+    CCLOG("obj referenceCount=%d",obj->getReferenceCount());
+    
+    //obj in current pool will be release
+    Director::getInstance()->replaceScene(this);
+```
+    
 控制台显示的日志如下：
 
 ```
