@@ -6,13 +6,13 @@ cocos2dx中的数据存储类为CCUserDefault，可作为轻量级数据库使�
 
 CCUserDefault与CCDirector和SimpleAudioEngine一样，都采用单例模式。
 
-CCUserDefault采用了XML的存储技术，类似map的映射，键与值一一对应，可以通过set(), get()方法修改值
+**CCUserDefault采用了XML的存储技术，类似map的映射，键与值一一对应，可以通过set(), get()方法修改值**
 首次使用时xml并不存在，CCUserDefault会自动创建相应的xml文件.<br>
 支持5种数据：bool, init, float, double, string.<br>
 
-CCUserDefault中的方法
+**CCUserDefault中的方法**
 
-1. set/get 设置/获取数据值
+**1. set/get 设置/获取数据值**
 
 ```
     //设置bool, int, float, double, string
@@ -34,11 +34,11 @@ CCUserDefault中的方法
     std::string getStringForKey( const char* pKey, const std::string& defaultValue = ""); 
 ```
 
-2. flush()
+**2. flush()**
 
 通过setXXXForKey()设置完数据之后需要调用flush()函数保存数据
 
-3. 其他
+**3. 其他**
 
 ```
     static CCUserDefault* sharedUserDefault();  //获取单例对象
