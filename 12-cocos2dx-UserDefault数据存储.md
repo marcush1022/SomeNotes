@@ -10,7 +10,7 @@ CCUserDefault与CCDirector和SimpleAudioEngine一样，都采用单例模式。
 首次使用时xml并不存在，CCUserDefault会自动创建相应的xml文件.<br>
 支持5种数据：bool, init, float, double, string.<br>
 
-**CCUserDefault中的方法: **
+**CCUserDefault中的方法**
 
 **1. set/get 设置/获取数据值**
 
