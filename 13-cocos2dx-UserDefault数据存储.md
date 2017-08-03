@@ -11,6 +11,7 @@ CCUserDefault与CCDirector和SimpleAudioEngine一样，都采用单例模式。
 支持5种数据：bool, init, float, double, string.<br>
 
 **CCUserDefault中的方法**
+----
 
 **1. set/get 设置/获取数据值**
 
