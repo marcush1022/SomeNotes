@@ -1,7 +1,11 @@
 cocos2d-x的内存管理机制
 ====
 
-致谢：https://github.com/chukong/cocos-docs/blob/master/manual/framework/native/v3/memory-management
+致谢：
+
+https://github.com/chukong/cocos-docs/blob/master/manual/framework/native/v3/memory-management
+
+http://blog.csdn.net/ring0hx/article/details/7946397
 
 cocos2dx的内存管理移植自objective-C，与C++的内存管理机制有所区别。
 
