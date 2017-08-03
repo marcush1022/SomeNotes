@@ -12,6 +12,7 @@ cocos2dx中用到很多，最普遍的例如那些create函数，只要用户一
 注意，SimpleAudioEngine并没有增加新的功能，而只是把子系统现有的类进行组合来完成一些常用的任务，简化客户程序的使用.
 
 **SimpleAudioEngine**
+----
 
 SimpleAudioEngine中的方法：
 
@@ -68,6 +69,7 @@ void BaseBarracksTower::setRallyPoint(Point point)
 ```
 
 **使用外观模式的优缺点**
+----
 
 优点：<br>
 
