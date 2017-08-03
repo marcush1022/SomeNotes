@@ -1,4 +1,4 @@
-12-cocos2dx-CCUserDefault数据存储
+13-cocos2dx-CCUserDefault数据存储
 ====
 
 cocos2dx中的数据存储类为CCUserDefault，可作为轻量级数据库使用。<br>
