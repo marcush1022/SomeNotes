@@ -22,14 +22,13 @@ cocos2dx提供了2个action CCBezierBy和CCBezierTo，使用比较简单，只�
 例：
 
 ```
-    //
-    ccBezierConfig bezier;
-		if(shootTag == 1)//播放射箭音效  
+                ccBezierConfig bezier;
+	        if(shootTag == 1)//播放射箭音效  
 			SoundManager::playArrowShoot1();
 		else
 			SoundManager::playArrowShoot2();
 		//计算弧线两个控制点, 即起始位置的上方与终点位置的上方，高度设置为200
-    //Point shootVector = nearestMonster->baseSprite->getPosition() - this->getParent()->getPosition();
+                //Point shootVector = nearestMonster->baseSprite->getPosition() - this->getParent()->getPosition();
 		bezier.controlPoint_1 = Point(currBullet->getPosition().x,currBullet->getPosition().y+200); 
 		bezier.controlPoint_2 = Point(shootVector.x,shootVector.y+200);; 
 		bezier.endPosition = shootVector;
