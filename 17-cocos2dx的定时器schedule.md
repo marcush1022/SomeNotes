@@ -78,12 +78,12 @@ void resumeSchedulerAndActions(void);   //恢复所有定时器和动作
 void Assassin::cheakState()
 {
 	if(nearestMonster!=NULL){
-    //默认定时器
-		scheduleUpdate();
-    //自定义定时器，刷新函数为Assassin::attackMonster(float dt)
-		schedule(schedule_selector(Assassin::attackMonster), 1.0f,-1,0);
+        //默认定时器
+	scheduleUpdate();
+        //自定义定时器，刷新函数为Assassin::attackMonster(float dt)
+	schedule(schedule_selector(Assassin::attackMonster), 1.0f,-1,0);
 	}else{
-		runToLocation(getLocation());
+	runToLocation(getLocation());
 	}
 }
 ```
