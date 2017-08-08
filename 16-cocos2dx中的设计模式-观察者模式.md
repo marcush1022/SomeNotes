@@ -10,7 +10,7 @@
 * 需要将BaseMap中的实时玩家信息传递到PlayerStateMenu中显示；
 * 使用观察者模式，让PlayerStateMenu类订阅BaseMaple类的信息，就可以实现数据传递。
 
-注：3.0中用EventListenerCustom取代了NotificationCenter.
+**注：3.0中用EventListenerCustom取代了NotificationCenter。 **
 
 NotificationCenter
 ----
