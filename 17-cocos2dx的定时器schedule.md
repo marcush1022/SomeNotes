@@ -5,7 +5,7 @@
 
 cocos2dx的定时器操作函数定义在CCNode中，因此大部分的引擎类都可以使用定时器，例如CCLayer, CCMenu, CCSprite等。
 
-定时器的更新方式分为3类：<br>
+**定时器的更新方式分为3类：** <br>
 1. 默认定时器: scheduleUpdate() <br>
 2. 自定义定时器: schedule() <br>
 3. 一次性定时器: scheduleOnce() <br>
