@@ -87,4 +87,4 @@ class CC_DLL __NotificationCenter : public Ref {
 **工作原理：通过addObverser订阅消息，NoificationCenter会自动创建一个对象NotificationObserver，即观察者，然后将observer添加到观察者数组
 _observers中。**
 
-**发布消息时，遍历_observers数组，查找消息名为name的所有订阅，然后执行其观察者target绑定的回调函数selector. **
+**发布消息时，遍历_observers数组，查找消息名为name的所有订阅，然后执行其观察者target绑定的回调函数selector。**
